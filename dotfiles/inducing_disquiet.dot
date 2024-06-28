@@ -1,0 +1,50 @@
+digraph G {
+	E1 [label="Inducing Disquiet", color=green, style=filled, fillcolor=lightgreen];
+
+	BC1 [label="Unwelcome Noise", color=blue, style=filled, fillcolor=lightblue];
+	BC2 [label="Invading\nPersonal Space", color=blue, style=filled, fillcolor=lightblue];
+	BC3 [label="Predatory\nCat Behaviors", color=blue, style=filled, fillcolor=lightblue];
+	BC3a [label="Hunting", color=blue, style=filled, fillcolor=lightblue];
+	BC3a -> BC3;
+	BC4 [label="Condescension", color=blue, style=filled, fillcolor=lightblue];
+
+	BC1 -> E1;
+	BC2 -> E1;
+	BC3 -> E1;
+	BC4 -> E1;
+
+	B1 [label="Loud\nHands\nInside", color=red, style=filled, filcolor=lightred];
+	B2 [label="Loud\nFeet\nInside", color=red, style=filled, filcolor=lightred];
+	B3 [label="Loud\nMouths\nInside", color=red, style=filled, filcolor=lightred];
+	B4 [label="High-Pitched\nor\nWhiny Voice", color=red, style=filled, filcolor=lightred];
+
+	B1 -> BC1;
+	B2 -> BC1;
+	B3 -> BC1;
+	B4 -> BC1;
+
+	B5 [label="Chasing", color=red, style=filled, filcolor=lightred];
+	B6 [label="Pouncing", color=red, style=filled, filcolor=lightred];
+	B7 [label="Growling", color=red, style=filled, filcolor=lightred];
+	B8 [label="Making Claws", color=red, style=filled, filcolor=lightred];
+
+	B5 -> BC3a;
+	B6 -> BC3a;
+	B7 -> BC3;
+	B8 -> BC3;
+
+	B9 [label="Getting Into\nAnother's Face", color=red, style=filled, filcolor=lightred];
+	B9 [label="Messing With\nAnother's Hair", color=red, style=filled, filcolor=lightred];
+	B10 [label="Kicking\n(under the table)", color=red, style=filled, filcolor=lightred];
+	B11 [label="Stretching Feet\n& Poking Another\n(under the table)", color=red, style=filled, filcolor=lightred];
+	B12 [label="Tickling", color=red, style=filled, filcolor=lightred];
+
+	B5 -> BC2;
+	B6 -> BC2;
+	B9 -> BC2;
+	B10 -> BC2;
+	B11 -> BC2;
+	B12 -> BC2;
+
+	
+}
